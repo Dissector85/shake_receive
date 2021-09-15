@@ -1,6 +1,6 @@
 input.onButtonPressed(Button.A, function () {
     pins.digitalWritePin(DigitalPin.P0, 1)
-    basic.pause(100)
+    basic.pause(200)
     pins.digitalWritePin(DigitalPin.P0, 0)
 })
 radio.onReceivedString(function (receivedString) {
@@ -13,6 +13,8 @@ radio.onReceivedString(function (receivedString) {
     }
 })
 input.onButtonPressed(Button.B, function () {
+    pins.digitalWritePin(DigitalPin.P0, 1)
+    basic.pause(50)
     pins.digitalWritePin(DigitalPin.P0, 0)
 })
 radio.setGroup(1)

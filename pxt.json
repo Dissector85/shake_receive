@@ -1,5 +1,5 @@
 {
-    "name": "shake_receive",
+    "name": "shake_receive_f",
     "description": "",
     "dependencies": {
         "core": "*",
